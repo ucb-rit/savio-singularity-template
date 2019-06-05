@@ -9,12 +9,6 @@ In `build_examples.md` we show a variety of ways to build a Singularity containe
 
 `example.def` is a bare-bones Singularity definition file suitable for using as a starting point for preparing your own definition file for a container to use on Savio.  `example-gpu.def` is an example for software that uses a GPU. `Dockerfile` is an example Dockerfile that shows how to install MPI within the container for applications you would run via MPI from outside the container.
 
-## Accessing files in a Singularity container
-
-If you build your own container following the approaches discussed above, you should find that your home directory, your scratch directory, and `/tmp` from Savio are all directly available inside the container.
-
-See at bottom for how to access Savio directories if you pull a container directly from Dockerhub or SingularityHub/Singularity Container Library.
-
 ## Running Singularity containers on Savio
 
 This follows from the standard ways to run a Singularity container via `singularity shell`, `singularity run`, `singularity exec`, etc.
@@ -40,6 +34,15 @@ mpirun singularity run mpi.simg                 ## directly run the default cont
 mpirun singularity exec mpi.simg /app/quad_mpi  ## alternative to invoke container command manually
 
 ```
+
+## Accessing files in a Singularity container
+
+If you build your own container following the approaches discussed above, you should find that your home directory, your scratch directory, and `/tmp` from Savio are all directly available inside the container.
+
+See at bottom for how to access Savio directories if you pull a container directly from Dockerhub or SingularityHub/Singularity Container Library.
+
+
+## Pre-built containers for Savio
 
 We provide a few pre-built containers available via the Savio software module system.
 
