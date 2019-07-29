@@ -38,7 +38,7 @@ sudo SINGULARITY_NOHTTPS=1 singularity build test.simg test_local_docker_registr
 docker build -f Dockerfile -t test:0.1 .
 
 docker login --username=paciorek 
-docker tag mpi paciorek/test:0.1
+docker tag test paciorek/test:0.1
 docker push paciorek/test
 
 sudo singularity build test.simg docker://paciorek/test:0.1
