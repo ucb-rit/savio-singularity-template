@@ -7,7 +7,6 @@ From: ubuntu:18.04
     export LC_ALL
 
 %post
-        mkdir -p /global/scratch
-        mkdir -p /global/home/users
+    # can add build steps here
 
 

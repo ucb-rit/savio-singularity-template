@@ -1,6 +1,8 @@
 # savio-singularity-template
 This repository provides example files and instructions for using Singularity containers on the UC Berkeley high-performance computing cluster, Savio.
 
+NOTE: This documentation has been largely superseded by our updated [documentation for using Singularity on Savio](https://docs-research-it.berkeley.edu/services/high-performance-computing/user-guide/software/using-software/using-singularity-savio).
+
 ## Building Singularity containers
 
 To build a Singularity container, you generally need root access (i.e. administrative privileges) on a Linux machine on which you've installed Singularity. This might be your own machine or your group's server, or you might run a Linux virtual machine on Windows or MacOS, or you might run a Linux virtual machine on a cloud provider such as AWS or Google Cloud Platform. In addition, recent versions of Singularity (but not the version on Savio) allow you to build containers in the cloud through Sylabs cloud. Finally there is an [https://www.sylabs.io/singularity-desktop-macos/](alpha version of Singularity for MacOS).
